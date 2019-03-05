@@ -71,7 +71,7 @@ a:hover{
 
 .header_title p {
     color: #595757;
-    font-size: 0.8rem;
+    font-size: 1.1vw;
     margin: 0 -1vw 5px 1vw;
     line-height: 0.8rem;
 }
@@ -256,18 +256,18 @@ a:hover{
 .detail_btn a {
     margin: 0 0 0 5%;
     text-decoration: none;
-    color: #AA8E48;
+    color: #EAC342;
     font-size: 0.85rem;
 }
 
-#newsIndex, #flowIndex {
+#voiceIndex, #menuIndex {
     background: url(../image/section_bg.jpg);
     background-size: cover;
     color: #ffffff;
 }
 
-#newsIndex .main_btn a,
-#flowIndex .main_btn a {
+#voiceIndex .main_btn a,
+#menuIndex .main_btn a {
     color: #ffffff;
     border: solid 1px #707070;
 }
@@ -278,8 +278,8 @@ a:hover{
     border: none;
 }
 
-#newsIndex .block_subtitle,
-#flowIndex .block_subtitle,
+#voiceIndex .block_subtitle,
+#menuIndex .block_subtitle,
 #contactIndex .block_subtitle {
     right: 0;
     color: #ffffff;
@@ -314,28 +314,29 @@ a:hover{
     padding: 0 0 15px 0;
 }
 
-#menuIndex .block_content .block_card {
+#flowIndex .block_content .block_card {
     border-bottom: solid 0.5px #F8F8F8;
 }
 
-#menuIndex .block_content .block_card:nth-child(2) {
-    background: #F8F8F8;
-}
-
-#menuIndex .block_content .block_card:nth-child(4) {
-    background: #F8F8F8;
-}
-
-#flowIndex .block_content .block_card {
-    border-bottom: solid 0.5px #707070;
-}
-
 #flowIndex .block_content .block_card:nth-child(2) {
-    background: #707070;
+    background: #F8F8F8;
 }
 
 #flowIndex .block_content .block_card:nth-child(4) {
-    background: #707070;
+    background: #F8F8F8;
+}
+
+#menuIndex .block_content .block_card {
+    border-bottom: solid 0.5px #707070;
+}
+
+
+#menuIndex .block_content .block_card:nth-child(2) {
+    background: #595757;
+}
+
+#menuIndex .block_content .block_card:nth-child(4) {
+    background: #595757;
 }
 
 #voiceIndex .block_content .card_date {
@@ -477,6 +478,15 @@ a:hover{
 }
 
 @media screen and (max-width: 1030px) {
+    
+    .header_description {
+        width: 100px;
+    }
+    
+    .header_title p {
+        font-size: 9px;
+    }
+    
     .navbar_wrapper {
         display: none;
     }
@@ -594,6 +604,14 @@ a:hover{
         border-color: #ffffff;
     }
     
+    .navbar_toggler p {
+        transition: all .35s;
+    }
+    
+    .navbar_toggler.active p {
+        color: #595757;
+    }
+    
     .toggler_name {
         font-size: 12px;
         margin: 5px 0 0 0;
@@ -618,7 +636,7 @@ a:hover{
     .header_bgr_copy-01 p {
         font-size: 28px;
         line-height: 48px;
-        letter-spacing: 2px;
+        letter-spacing: 0;
         box-sizing: border-box;
     }
     
