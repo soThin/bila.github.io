@@ -31,7 +31,7 @@ h6{
 	font-size: 1.825rem;
 }
 p{
-	font-size: 0.85rem;
+	font-size: 0.9rem;
 }
 .font-xl{
 	font-size: 3rem;
@@ -69,8 +69,15 @@ a:hover{
     vertical-align: middle;
 }
 
+.header_title p {
+    color: #595757;
+    font-size: 0.8rem;
+    margin: 0 -1vw 5px 1vw;
+    line-height: 0.8rem;
+}
+
 .header_description {
-    width: 150px;
+    width: 12.5vw;
     display: block;
     margin: 0 -1vw 0 1vw;
 }
@@ -95,7 +102,7 @@ a:hover{
 }
 
 .navbar_wrapper ul li:last-child {
-    background: #AA8E48;
+    background: linear-gradient(45deg, #AA8E48, #EAC342);
     margin-left: 1vw;
 }
 
@@ -138,7 +145,7 @@ a:hover{
     position: absolute;
     width: 100%;
     height: 50vh;
-    background: #AA8E48;
+    background: linear-gradient(15deg, #AA8E48, #EAC342);
     z-index: -2;
     top: 0;
     left: 0;
@@ -152,11 +159,15 @@ a:hover{
     width: 95%;
     display: block;
     margin: 0 0 0 5%;
-    top: 28vh;
+    top: 25vh;
     color: #ffffff;
-    font-size: 2.75rem;
-    letter-spacing: 0.25rem;
+    letter-spacing: ;
     font-weight: 500;
+}
+
+.header_bgr_copy-01 p {
+    font-size: 2.75rem;
+    line-height: 4rem;
 }
 
 .header_bgr_copy-02 {
@@ -164,14 +175,14 @@ a:hover{
     width: 95%;
     display: block;
     margin: 0 0 0 5%;
-    top: 45vh;
+    top: 50vh;
 }
 
 .header_bgr_copy-02 p {
     font-size: 1.25rem;
     color: #ffffff;
-    letter-spacing: 0.1rem;
-    line-height: 2.5rem;
+    letter-spacing: ;
+    line-height: 2rem;
 }
 
 
@@ -195,20 +206,15 @@ a:hover{
 .block_title {
     position: relative;
     text-align: center;
-    margin: 0 0 60px 0;
+    margin: 0 0 30px 0;
     line-height: 2rem;
 }
 
-.block_title::after {
-    position: absolute;
-    content: '';
-    width: 50px;
-    height: 10px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: -25px;
-    border-bottom: 1px solid #AA8E48;
+.block_frame img {
+    width: 100px;
+    display: block;
+    margin: 0 auto 30px auto;
+    user-select: none;
 }
 
 .block_element {
@@ -255,7 +261,8 @@ a:hover{
 }
 
 #newsIndex, #flowIndex {
-    background: #595757;
+    background: url(../image/section_bg.jpg);
+    background-size: cover;
     color: #ffffff;
 }
 
@@ -360,6 +367,38 @@ a:hover{
     font-weight: 600;
 }
 
+#voiceIndex .block_content .block_card {
+    position: relative;
+}
+
+#voiceIndex .block_content .block_card .card_bg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+#voiceIndex .block_content .block_card .card_bg img {
+    width: 100%;
+    display: block;
+}
+
+#voiceIndex .block_content .block_card .card_media {
+    width: 70%;
+    display: block;
+    margin: 25px auto 0 auto;
+}
+
+#voiceIndex .block_content .block_card .card_date,
+#voiceIndex .block_content .block_card .card_title {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+#voiceIndex .main_btn a {
+    margin: 60px 15px 0 15px;
+}
+
 #contactIndex {
     color: #ffffff;
     background-image: url(../image/contact_bg.jpg);
@@ -393,7 +432,7 @@ a:hover{
 }
 
 #accessIndex .block_card .card_title img {
-    width: 75px;
+    width: 150px;
     display: block;
 }
 
@@ -461,7 +500,7 @@ a:hover{
     .navbar_wrapper_sp ul {
         background: #595757;
         margin: 0 auto;
-        padding: 60px 0 60px 0;
+        padding: 30px 0 30px 0;
         width: 100%;
     }
  
@@ -483,7 +522,7 @@ a:hover{
     .navbar_wrapper_sp ul li a {
         display: block;
         color: #ffffff;
-        padding: 0.5em 0;
+        padding: 1.2em 0;
         font-size: 0.8rem;
         text-decoration: none;
     }
@@ -513,7 +552,7 @@ a:hover{
     .navbar_toggler span {
         display: block;
         position: absolute;    /* .navbar_togglerに対して */
-        width: 30px;
+        width: 34px;
         border-bottom: solid 2px #AA8E48;
         -webkit-transition: .35s ease-in-out;
         -moz-transition: .35s ease-in-out;
@@ -555,6 +594,13 @@ a:hover{
         border-color: #ffffff;
     }
     
+    .toggler_name {
+        font-size: 12px;
+        margin: 5px 0 0 0;
+        text-align: center;
+        color: #AA8E48;
+    }
+    
     /* ハンバーガーメニューここまで */
     
     .header_wrapper {
@@ -562,22 +608,29 @@ a:hover{
     }
     
     .header_bgr_copy-01 {
-        top: 10vh;
+        top: 5vh;
+        width: 95%;
+        margin: 0 2.5%;
+        box-sizing: border-box;
+        
     }
     
-    .header_bgr_copy-01 {
-        font-size: 36px;
+    .header_bgr_copy-01 p {
+        font-size: 28px;
         line-height: 48px;
         letter-spacing: 2px;
+        box-sizing: border-box;
     }
     
     .header_bgr_copy-02 {
-        top: 32.5vh;
+        top: 36vh;
+        box-sizing: border-box;
     }
     
     .header_bgr_copy-02 p {
         font-size: 14px;
         line-height: 24px;
+        box-sizing: border-box;
     }
     
     .header_bgr {
@@ -629,5 +682,9 @@ a:hover{
     
     #conceptIndex .block_element {
         text-align: left;
+    }
+    
+    #conceptIndex .block_element br {
+        display: none;
     }
 }
