@@ -727,8 +727,8 @@ a:hover{
         display: none;
     }
     
-    .footer_navbar {
-        margin: 0 0 55px 0;
+    .footer_wrapper {
+        padding: 0 0 55px 0;
     }
     
     .cta_content {
