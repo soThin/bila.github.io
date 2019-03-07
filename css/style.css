@@ -71,7 +71,7 @@ a:hover{
 
 .header_title p {
     color: #595757;
-    font-size: 1vw;
+    font-size: 0.8vw;
     margin: 0 0 5px 1vw;
     line-height: 0.8rem;
     font-weight: 400;
@@ -159,37 +159,24 @@ a:hover{
     position: absolute;
     width: 95%;
     display: block;
-    margin: 0 0 0 5%;
-    top: 25vh;
+    margin: auto 0 auto 5%;
+    top: 31vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
     color: #ffffff;
 }
 
 .header_bgr_copy-01 p {
+    margin: auto 0;
     font-size: 2.75rem;
     line-height: 4rem;
     font-weight: 500;
 }
 
-.header_bgr_copy-02 {
-    position: absolute;
-    width: 95%;
-    display: block;
-    margin: 0 0 0 5%;
-    top: 50vh;
-}
-
 .header_bgr_copy-01 p br {
     display: none;
 }
-
-.header_bgr_copy-02 p {
-    font-size: 1.25rem;
-    color: #ffffff;
-    letter-spacing: ;
-    line-height: 2rem;
-}
-
-
 
 .block_wrapper {
     width: 100%;
@@ -529,6 +516,10 @@ a:hover{
         display: none;
     }
     
+    .header_bgr_background {
+        height: 35vh;
+    }
+    
     /* ハンバーガーメニュー */
     
     .navbar_wrapper_sp {
@@ -664,7 +655,7 @@ a:hover{
     }
     
     .header_bgr_copy-01 {
-        top: 8vh;
+        top: 12vh;
         width: 95%;
         margin: 0 2.5%;
         box-sizing: border-box;
@@ -679,19 +670,6 @@ a:hover{
     
     .header_bgr_copy-01 p br {
         display: block;
-    }
-    
-    .header_bgr_copy-02 {
-        top: 34vh;
-        width: 95%;
-        margin: 0 2.5%;
-        box-sizing: border-box;
-    }
-    
-    .header_bgr_copy-02 p {
-        font-size: 14px;
-        line-height: 24px;
-        box-sizing: border-box;
     }
     
     .header_bgr {
