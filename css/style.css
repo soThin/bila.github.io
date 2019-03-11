@@ -57,7 +57,6 @@ a:hover{
 
 
 
-
 .header_wrapper {
     width: 100%;
     height: 15vh;
@@ -178,6 +177,29 @@ a:hover{
     display: none;
 }
 
+.header_img_2 {
+    position: absolute;
+    bottom: 15px;
+    right: 60px;
+    width: 250px;
+}
+
+.header_img_2 img {
+    width: 100%;
+    display: block;
+}
+
+.header_img_2 p {
+    padding: 10px 0 0 0;
+    color: #ffffff;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+
+main {
+    font-size: 0;
+}
+
 .block_wrapper {
     width: 100%;
     padding: 60px 0;
@@ -189,7 +211,7 @@ a:hover{
     top: 0;
     line-height: 8vw;
     font-size: 8vw;
-    opacity: 0.1;
+    opacity: 0.15;
     user-select: none;
     color: #AA8E48;
 }
@@ -251,6 +273,27 @@ a:hover{
     font-size: 0.85rem;
 }
 
+#campaignIndex {
+    background: url(../image/salon-1826.jpg);
+    background-size: cover;
+    color: #ffffff;
+}
+
+#reasonIndex .block_list {
+    width: 220px;
+    margin: 30px auto 0 auto;
+    padding: 15px;
+    border: 1px solid #AA8E48;
+}
+
+.block_list li {
+    
+}
+
+.block_list li p {
+    
+}
+
 #menuIndex {
     background: url(../image/section_bg.jpg);
     background-size: cover;
@@ -263,22 +306,33 @@ a:hover{
     color: #ffffff;
 }
 
+#campaignIndex .main_btn a, 
 #voiceIndex .main_btn a,
 #menuIndex .main_btn a {
     color: #ffffff;
     border: solid 1px #f9f9f9;
 }
 
-#contactIndex .main_btn a {
+#campaignIndex .main_btn a {
+    margin: 0;
+}
+
+#contactIndex .main_btn a, 
+#reserveIndex .main_btn a {
     color: #ffffff;
     background: #AA8E48;
     border: none;
 }
 
+#campaignIndex .block_subtitle, 
 #voiceIndex .block_subtitle,
-#menuIndex .block_subtitle,
-#contactIndex .block_subtitle {
+#menuIndex .block_subtitle {
     right: 0;
+    color: #ffffff;
+}
+
+#contactIndex .block_subtitle,
+#reserveIndex .block_subtitle {
     color: #ffffff;
 }
 
@@ -418,7 +472,7 @@ a:hover{
 }
 
 #voiceIndex .block_content .block_card .card_media {
-    width: 70%;
+    width: 45%;
     display: block;
     margin: 25px auto 0 auto;
 }
@@ -435,8 +489,20 @@ a:hover{
 }
 
 #contactIndex {
+    font-size: 0;
+    width: 50%;
+    display: inline-block;
     color: #ffffff;
     background-image: url(../image/contact_bg.jpg);
+    background-size: cover;
+}
+
+#reserveIndex {
+    font-size: 0;
+    width: 50%;
+    display: inline-block;
+    color: #ffffff;
+    background-image: url(../image/reserve_bg.jpg);
     background-size: cover;
 }
 
@@ -515,7 +581,58 @@ a:hover{
     display: none;
 }
 
-@media screen and (max-width: 1030px) {
+.cta_content_pc {
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    width: 50px;
+    display: block;
+    box-shadow: 0 0 20px -5px;
+    background: #000;
+}
+
+.cta_content_pc .cta_card {
+    width: 50px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+.cta_content_pc .cta_card:nth-child(1) {
+    height: 130px;
+    background: #AA8E48;
+}
+
+.cta_content_pc .cta_card:nth-child(2) {
+    height: 110px;
+    background: #1dcd00;
+}
+
+.cta_content_pc .cta_card .cta_card_media img {
+    width: 50%;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.cta_content_pc .cta_card .cta_card_title {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 35px;
+    margin: auto;
+    font-size: 0.8rem;
+    color: #ffffff;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+
+@media screen and (max-width: 1024px) {
     
     .header_description {
         width: 100px;
@@ -530,8 +647,31 @@ a:hover{
     }
     
     .header_bgr_background {
-        height: 35vh;
+        height: 320px;
+        margin: 0;
     }
+    
+    
+.header_img_2 {
+    position: absolute;
+    bottom: 15px;
+    right: 2.5%;
+    width: 200px;
+    height: auto;
+}
+
+.header_img_2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header_img_2 p {
+    padding: 10px 0 0 0;
+    color: #ffffff;
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
     
     /* ハンバーガーメニュー */
     
@@ -668,7 +808,7 @@ a:hover{
     }
     
     .header_bgr_copy-01 {
-        top: 12vh;
+        top: 6vh;
         width: 95%;
         margin: 0 2.5%;
         box-sizing: border-box;
@@ -686,11 +826,11 @@ a:hover{
     }
     
     .header_bgr {
-        height: 50vh;
+        height: 400px;
     }
     
-    .header_bgr img {
-        height: 50vh;
+    .header_img {
+        height: 400px;
     }
     
     #accessIndex {
@@ -744,6 +884,10 @@ a:hover{
         padding: 0 0 55px 0;
     }
     
+    .cta_content_pc {
+        display: none;
+    }
+    
     .cta_content {
         position: fixed;
         bottom: 0;
@@ -778,4 +922,10 @@ a:hover{
         line-height: 0.7rem;
         text-align: center;
     }
+    
+    #contactIndex, #reserveIndex {
+        display: block;
+        width: 100%;
+    }
+
 }
