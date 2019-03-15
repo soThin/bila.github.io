@@ -333,13 +333,14 @@ main {
 
 .block_list li p {
     position: absolute;
-    top: 35%;
+    top: 33.5%;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
     color: #ffffff;
     font-weight: 600;
+    font-size: 1rem;
 }
 
 #menuIndex {
@@ -870,7 +871,8 @@ main {
         width: 95%;
         margin: 0 2.5%;
         box-sizing: border-box;
-        text-shadow: 0px 0px 10px #000000;
+        text-shadow: 0px 0px 5px #000000;
+        font-weight: 600;
     }
     
     .header_bgr_copy-01 p {
