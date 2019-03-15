@@ -879,7 +879,7 @@ main {
         line-height: 48px;
         letter-spacing: 0;
         box-sizing: border-box;
-        font-weight: bold;
+        font-weight: 500;
     }
     
     .header_bgr_copy-01 p br {
