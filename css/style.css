@@ -783,22 +783,22 @@ main {
     position: absolute;
     bottom: 15px;
     right: 2.5%;
-    width: 200px;
+    width: 250px;
     height: auto;
 }
 
 .header_img_2 img {
-    width: 75%;
+    width: 65%;
     height: auto;
     display: block;
-    margin: auto;
+    margin: 0 auto -30px auto;
 }
 
 .header_img_2 p {
     padding: 10px 0 0 0;
     color: #ffffff;
-    font-size: 0.6rem;
-    line-height: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
 }
     
     /* ハンバーガーメニュー */
