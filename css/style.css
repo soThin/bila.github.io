@@ -31,7 +31,7 @@ h6{
 	font-size: 1.825rem;
 }
 p{
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 .font-xl{
 	font-size: 3rem;
@@ -55,6 +55,9 @@ a:hover{
 	color: var(--font-color);
 }
 
+.br-sp {
+    display: none;
+}
 
 
 .header_wrapper {
@@ -179,21 +182,23 @@ a:hover{
 
 .header_img_2 {
     position: absolute;
-    bottom: 15px;
-    right: 60px;
-    width: 250px;
+    bottom: 25px;
+    right: 80px;
+    width: 275px;
 }
 
 .header_img_2 img {
-    width: 100%;
+    width: 80%;
     display: block;
+    margin: 0 auto -30px auto;
 }
 
 .header_img_2 p {
-    padding: 10px 0 0 0;
+    padding: 0 0 0 0;
     color: #ffffff;
-    font-size: 0.8rem;
-    line-height: 1.4rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.5rem;
 }
 
 main {
@@ -249,17 +254,32 @@ main {
 }
 
 .main_btn a {
-    width: 250px;
-    margin: 30px 15px 0 15px;
+    width: 275px;
+    margin: 30px auto 0 auto;
     display: inline-block;
-    padding: 10px 0;
+    padding: 15px 0;
     display: inline-block;
     border: solid 1px #E6E6E6;
     text-decoration: none;
     color: #595757;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
+    position: relative;
+}
+
+.main_btn a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 6px;
+    border-color: transparent transparent transparent #333333;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    margin: auto;
 }
 
 .detail_btn {
@@ -279,16 +299,21 @@ main {
     color: #ffffff;
 }
 
+#reasonIndex .block_element {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 #reasonIndex .block_list {
     width: 100%;
     display: block;
-    margin: 30px auto 0 auto;
+    margin: 30px auto 30px auto;
     text-align: center;
 }
 
 .block_list li {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     display: inline-block;
     margin: 0 25px;
     vertical-align: middle;
@@ -333,14 +358,14 @@ main {
 
 .block_list li p {
     position: absolute;
-    top: 33.5%;
+    top: 35%;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
     color: #ffffff;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 #menuIndex {
@@ -355,15 +380,41 @@ main {
     color: #ffffff;
 }
 
-#campaignIndex .main_btn a, 
 #voiceIndex .main_btn a,
 #menuIndex .main_btn a {
     color: #ffffff;
     border: solid 1px #f9f9f9;
 }
 
+#voiceIndex .main_btn a::before,
+#menuIndex .main_btn a::before {
+    border-color: transparent transparent transparent #ffffff;
+}
+
 #campaignIndex .main_btn a {
     margin: 0;
+    padding: 22.5px 0;
+    color: #ffffff;
+    background: linear-gradient(0deg, #AA8E48, #EAC342);
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
+    font-size: 1.15rem;
+    line-height: 1.15rem;
+    width: 275px;
+    position: relative;
+}
+
+#campaignIndex .main_btn a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 8px 8px;
+    border-color: transparent transparent transparent #ffffff;
+    right: 20px;
+
 }
 
 #contactIndex .main_btn a, 
@@ -373,7 +424,17 @@ main {
     border: none;
 }
 
-#campaignIndex .block_subtitle, 
+#contactIndex .main_btn a::before, 
+#reserveIndex .main_btn a::before {
+    border-color: transparent transparent transparent #ffffff;
+}
+
+#campaignIndex .block_subtitle {
+    right: 0;
+    color: #ffdd4d;
+    opacity: 0.5;
+}
+
 #voiceIndex .block_subtitle,
 #menuIndex .block_subtitle {
     right: 0;
@@ -489,6 +550,7 @@ main {
     display: block;
     top: 0;
     left: 0;
+    user-select: none;
 }
 
 .card_bg_2 {
@@ -497,6 +559,7 @@ main {
     display: block;
     top: 0;
     right: 0;
+    user-select: none;
 }
 
 .card_bg_3 {
@@ -505,6 +568,7 @@ main {
     display: block;
     bottom: 0;
     right: 0;
+    user-select: none;
 }
 
 .card_bg_4 {
@@ -513,6 +577,7 @@ main {
     display: block;
     bottom: 0;
     left: 0;
+    user-select: none;
 }
 
 #voiceIndex .block_content {
@@ -663,7 +728,7 @@ main {
 
 .cta_content_pc .cta_card:nth-child(2) {
     height: 110px;
-    background: #1dcd00;
+    background: #0bb203;
 }
 
 .cta_content_pc .cta_card .cta_card_media img {
@@ -691,6 +756,10 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
+    
+    .br-sp {
+    display: block;
+}
     
     .header_description {
         width: 100px;
@@ -996,7 +1065,7 @@ main {
     
     .block_list li {
         display: block;
-        margin: 0 auto 30px auto;
+        margin: 0 auto 25px auto;
     }
     
     .block_list li::after {
@@ -1008,7 +1077,7 @@ main {
         right: 0;
         width: 20px;
         height: 2px;
-        margin: -30px auto 0 auto;
+        margin: -32.5px auto 0 auto;
         background: #AA8E48;
         transform: rotate(45deg);
     }
@@ -1022,7 +1091,7 @@ main {
         right: 0;
         width: 20px;
         height: 2px;
-        margin: -30px auto 0 auto;
+        margin: -32.5px auto 0 auto;
         background: #AA8E48;
         transform: rotate(-45deg);
     }
