@@ -963,7 +963,8 @@ main {
         font-weight: 800;
         text-align: center;
         z-index: 100;
-        background: rgba(170, 142, 72, .85);
+        background: linear-gradient(45deg, #AA8E48, #EAC342);
+        opacity: 0.9;
         padding: 10px 0;
     }
     
