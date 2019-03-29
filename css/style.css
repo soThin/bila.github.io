@@ -429,7 +429,7 @@ main {
 
 #contactIndex .main_btn a::before, 
 #reserveIndex .main_btn a::before {
-    border-color: transparent transparent transparent #aa8e48;
+    border-color: transparent transparent transparent #ffffff;
 }
 
 #campaignIndex .block_subtitle {
@@ -644,16 +644,18 @@ main {
     width: 50%;
     display: inline-block;
     color: #ffffff;
-    background-image: url(../image/contact_bg.png);
+    background-image: url(../image/salon-1828.jpg);
     background-size: cover;
-    background-position: right top;
-    padding: 40px 0;
+    background-position: right bottom;
+    padding: 60px 0;
 }
 
 #contactIndex .block_element,
 #reserveIndex .block_element {
     text-align: left;
     margin: 0 0 0 5%;
+    text-shadow: 0px 0px 4px #000000;
+    font-weight: 500;
 }
 
 #contactIndex .main_btn, 
@@ -666,13 +668,15 @@ main {
 #contactIndex .block_title {
     text-align: left;
     margin: 0 0 15px 5%;
+    text-shadow: 0px 0px 5px #000000;
 }
 
 #reserveIndex .main_btn a, 
 #contactIndex .main_btn a {
-    background: #fff;
+    background: linear-gradient(45deg, #AA8E48, #EAC342);
     border-radius: 5px;
-    color: #aa8e48;
+    box-shadow: 0 0 7.5px 0 rgba(0,0,0,0.25);
+    color: #ffffff;
     width: 200px;
     padding: 10px 0;
     margin: 15px 0 0 0;
@@ -688,10 +692,10 @@ main {
     width: 50%;
     display: inline-block;
     color: #ffffff;
-    background-image: url(../image/reserve_bg.png);
+    background-image: url(../image/salon-2082.jpg);
     background-size: cover;
-    background-position: right top;
-    padding: 40px 0;
+    
+    padding: 60px 0;
     border-bottom: solid 0.5px #ffffff;
 }
 
