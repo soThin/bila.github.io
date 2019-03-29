@@ -593,7 +593,7 @@ main {
 }
 
 #voiceIndex .block_content .block_card .card_media {
-    width: 30%;
+    width: 40%;
     display: inline-block;
     margin: 15px auto 15px auto;
     vertical-align: middle;
@@ -605,7 +605,7 @@ main {
 }
 
 #voiceIndex .block_content .block_card .card_title {
-    width: 57.5%;
+    width: 47.5%;
     display: inline-block;
     margin: auto;
     padding: 0 2.5% 0 0;
