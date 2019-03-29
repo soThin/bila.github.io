@@ -756,15 +756,42 @@ main {
 
 #footerScroller {
     width: 100%;
-    padding: 15px 0;
+    padding: 30px 0 15px 0;
     background: #e9e9e9;
     text-align: center;
     border-bottom: solid 1px #E1E1E1;
 }
 
-.footer_scroller::after {
-    
+#footerScroller span a {
+    text-decoration: none;
+    color: #333333;
+    padding: 10px 0 0 0;
+    position: relative;
 }
+
+#footerScroller span a::before {
+    content: '';
+        width: 12px;
+        height: 12px;
+        border: 0px;
+        border-top: solid 1px #333333;
+        border-right: solid 1px #333333;
+        bottom: 0;
+        display: block;
+        left: 0;
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 0 auto 0 auto;
+}
+
+#footerScroller span a:hover {
+    opacity: 0.5;
+}
+
 
 .cta_content {
     display: none;
@@ -845,7 +872,7 @@ main {
     .navbar_wrapper_sp {
         display: block;
         position: fixed;
-        z-index: 2;
+        z-index: 10000;
         top: 0;
         left: 0;
         background: none;
@@ -902,7 +929,7 @@ main {
         width: 34px;
         height: 48px;
         cursor: pointer;
-        z-index: 400;
+        z-index: 10001;
         text-align: center;
         background: none;
         border: none;
